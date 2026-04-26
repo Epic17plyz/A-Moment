@@ -1,0 +1,49 @@
+{
+  "_version" : "2.1.0",
+  "_songName" : "A Moment",
+  "_songSubName" : "from \"Project Hail Mary\"",
+  "_songAuthorName" : "Daniel Pemberton",
+  "_levelAuthorName" : "OozVR",
+  "_beatsPerMinute" : 101,
+  "_songTimeOffset" : 0,
+  "_shuffle" : 0,
+  "_shufflePeriod" : 0,
+  "_previewStartTime" : 67,
+  "_previewDuration" : 45,
+  "_songFilename" : "A Moment.ogg",
+  "_coverImageFilename" : "A Moment.jpg",
+  "_environmentName" : "DefaultEnvironment",
+  "_allDirectionsEnvironmentName" : "GlassDesertEnvironment",
+  "_environmentNames" : [
+    "DefaultEnvironment"
+  ],
+  "_colorSchemes" : [
+  ],
+  "_difficultyBeatmapSets" : [
+    {
+      "_beatmapCharacteristicName" : "Standard",
+      "_difficultyBeatmaps" : [
+        {
+          "_difficulty" : "Hard",
+          "_difficultyRank" : 5,
+          "_beatmapFilename" : "HardStandard.dat",
+          "_noteJumpMovementSpeed" : 10,
+          "_noteJumpStartBeatOffset" : -0.485,
+          "_beatmapColorSchemeIdx" : 0,
+          "_environmentNameIdx" : 0,
+          "_customData" : {
+            "_difficultyLabel" : "IT IS TIME GO"
+          }
+        }
+      ]
+    }
+  ],
+  "_customData" : {
+    "_editors" : {
+      "_lastEditedBy" : "ChroMapper",
+      "ChroMapper" : {
+        "version" : "0.13.892"
+      }
+    }
+  }
+}
