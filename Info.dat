@@ -32,7 +32,13 @@
           "_beatmapColorSchemeIdx" : 0,
           "_environmentNameIdx" : 0,
           "_customData" : {
-            "_difficultyLabel" : "IT IS TIME GO"
+            "_settings" : {
+              "_colors" : {
+              }
+            },
+            "_difficultyLabel" : "IT IS TIME GO",
+            "_colorLeft" : {"r":1,"g":0.498,"b":0.264},
+            "_colorRight" : {"r":0.309,"g":0.851,"b":0.309}
           }
         }
       ]

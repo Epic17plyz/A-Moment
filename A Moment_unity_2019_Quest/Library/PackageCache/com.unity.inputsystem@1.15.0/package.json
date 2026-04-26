@@ -1,0 +1,109 @@
+{
+  "name": "com.unity.inputsystem",
+  "displayName": "Input System",
+  "version": "1.15.0",
+  "unity": "2021.3",
+  "description": "A new input system which can be used as a more extensible and customizable alternative to Unity's classic input system in UnityEngine.Input.",
+  "keywords": [
+    "input",
+    "events",
+    "keyboard",
+    "mouse",
+    "gamepad",
+    "touch",
+    "vr",
+    "xr"
+  ],
+  "dependencies": {
+    "com.unity.modules.uielements": "1.0.0"
+  },
+  "_upm": {
+    "changelog": "### Changed\n- Expanded `RebindingUISample` to include a \"game mode\" state and a \"menu state\" to be more similar to a real game. Also added action-performed indicators (`InputActionIndicator`) illustrating when actions get triggered.\n\n### Added\n- Exposed MediaPlayPause, MediaRewind, MediaForward keys on Keyboard.\n- Added a new fluent API `WithSuppressedActionPropagation()` to `UnityEngine.InputSystem.InputActionRebindingExtensions` that allows suppressing actions from firing during interactive rebinding while allowing state updates to avoid actions triggering after state event suppression (default). ISXB-1546.\n- Added a new Monobehavior `InputActionLabel` to rebinding sample to allow dynamic text showing relevant binding for an `InputAction`.\n\n### Fixed\n- Fixed an issue in `RebindingUISample` that fired actions bound to the same control as the target control in a rebinding process. ISXB-1524.\n- Fixed an issue in `RebindingUISample` preventing UI navigation without Keyboard and Mouse present.\n- Fixed an issue in `RebindActionUI` which resulted in active binding not being shown after a scene reload. ISXB-1588.\n- Fixed an issue in `GamepadIconExample` which resulted in icons for left and right triggers not being displayed after a rebind to the exact same controls. ISXB-1593.\n- Fixed the compilation warnings when used with Unity 6.4 (ISX-2349).\n- Fixed an issue where `InputSystemUIInputModule.localMultiPlayerRoot` could not be set to `null` when using `MultiplayerEventSystem`. [ISXB-1610](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1610)\n- Fixed an issue in `Keyboard` where the sub-script operator would return a `null` key control for the deprecated key `Key.IMESelected`. Now, an aliased `KeyControl`mapping to the IMESelected bit is returned for compability reasons. It is still strongly advised to not rely on this key since `IMESelected` bit isn't strictly a key and will be removed from the `Key` enumeration type in a future major revision. [ISXB-1541](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1541).\n- Fixed InputControl picker not updating correctly when the Input Actions Window was dirty. [ISXB-1221](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1221)\n- Fixed formatting issues on processor documentation page"
+  },
+  "upmCi": {
+    "footprint": "6e6187a0c00b8d72721e849b18af8a92903567b8"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.inputsystem@1.15/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/InputSystem.git",
+    "type": "git",
+    "revision": "58a055af3beab70a54c4c6dd20c42aa2ede2f7bd"
+  },
+  "samples": [
+    {
+      "displayName": "Custom Binding Composite",
+      "description": "Shows how to implement a custom composite binding.",
+      "path": "Samples~/CustomComposite"
+    },
+    {
+      "displayName": "Custom Device",
+      "description": "Shows how to implement a custom input device.",
+      "path": "Samples~/CustomDevice"
+    },
+    {
+      "displayName": "Custom Device Usages",
+      "description": "Shows how to tag devices with custom usage strings that can be used, for example, to distinguish multiple instances of the same type of device (e.g. 'Gamepad') based on how the device is used (e.g. 'Player1' vs 'Player2' or 'LeftHand' vs 'RightHand').",
+      "path": "Samples~/CustomDeviceUsages"
+    },
+    {
+      "displayName": "Gamepad Mouse Cursor",
+      "description": "An example that shows how to use the gamepad for driving a mouse cursor for use with UIs.",
+      "path": "Samples~/GamepadMouseCursor"
+    },
+    {
+      "displayName": "In-Game Hints",
+      "description": "Demonstrates how to create in-game hints in the UI which reflect current bindings and active control schemes.",
+      "path": "Samples~/InGameHints"
+    },
+    {
+      "displayName": "InputDeviceTester",
+      "description": "A scene containing UI to visualize the controls on various supported input devices.",
+      "path": "Samples~/InputDeviceTester"
+    },
+    {
+      "displayName": "Input Recorder",
+      "description": "Shows how to capture and replay input events. Also useful by itself to debug input event sequences.",
+      "path": "Samples~/InputRecorder"
+    },
+    {
+      "displayName": "On-Screen Controls",
+      "description": "Demonstrates a simple setup for an on-screen joystick.",
+      "path": "Samples~/OnScreenControls"
+    },
+    {
+      "displayName": "Rebinding UI",
+      "description": "An example UI component that demonstrates how to create UI for rebinding actions.",
+      "path": "Samples~/RebindingUI"
+    },
+    {
+      "displayName": "Simple Demo",
+      "description": "A walkthrough of a simple character controller that demonstrates several techniques for working with the input system. See the README.md file in the sample for details.",
+      "path": "Samples~/SimpleDemo"
+    },
+    {
+      "displayName": "Simple Multiplayer",
+      "description": "Demonstrates how to set up a simple local multiplayer scenario.",
+      "path": "Samples~/SimpleMultiplayer"
+    },
+    {
+      "displayName": "Touch Samples",
+      "description": "A series of sample scenes for using touch input with the Input System package. This sample is not actually part of the package, but needs to be downloaded.",
+      "path": "Samples~/TouchSamples"
+    },
+    {
+      "displayName": "UI vs. Game Input",
+      "description": "An example that shows how to deal with ambiguities that may arise when overlaying interactive UI elements on top of a game scene.",
+      "path": "Samples~/UIvsGameInput"
+    },
+    {
+      "displayName": "Unity Remote",
+      "description": "An example with a simple scene for trying out the Unity Remote app.",
+      "path": "Samples~/UnityRemote"
+    },
+    {
+      "displayName": "Visualizers",
+      "description": "Several example visualizations of input controls/devices and input actions.",
+      "path": "Samples~/Visualizers"
+    }
+  ]
+}
